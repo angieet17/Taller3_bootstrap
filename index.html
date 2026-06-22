@@ -1,0 +1,161 @@
+<!DOCTYPE html>
+<html lang="es-Co">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Galería de Arte</title>
+
+    <link rel="icon" type="image/x-icon" href="assets/img/logo_sena.png">
+
+    <meta name="author" content="Angie Rodriguez">
+    <meta name="description" content="Página de galería de arte">
+    <meta name="keywords" content="arte, galería, diseño">
+
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.13.1/font/bootstrap-icons.min.css">
+</head>
+
+<body>
+
+    <!-- NAV -->
+    <header class="sticky-top">
+        <nav class="navbar navbar-expand-sm navbar-dark bg-dark ">
+            <div class="container-fluid">
+                <a class="navbar-brand" href="#">Arte</a>
+
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#menu">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+
+                <div class="collapse navbar-collapse" id="menu">
+                    <ul class="navbar-nav">
+                        <li class="nav-item">
+                            <a class="nav-link" href="#"><i class="bi bi-house-heart-fill"></i></a>
+                        </li>
+                        <li class="nav-item"><a class="nav-link" href="#">Galería</a></li>
+                        <li class="nav-item"><a class="nav-link" href="#">Artistas</a></li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+    </header>
+
+    <main>
+
+        <!-- CAROUSEL -->
+        <div id="demo" class="carousel slide" data-bs-ride="carousel">
+
+            <div class="carousel-indicators">
+                <button data-bs-target="#demo" data-bs-slide-to="0" class="active"></button>
+                <button data-bs-target="#demo" data-bs-slide-to="1"></button>
+                <button data-bs-target="#demo" data-bs-slide-to="2"></button>
+            </div>
+
+            <div class="carousel-inner">
+                <div class="carousel-item active">
+                    <img src="assets/img/imagen1.png" class="d-block w-100" alt="arte 1">
+                </div>
+
+                <div class="carousel-item">
+                    <img src="assets/img/imagen2.png" class="d-block w-100" alt="arte 2">
+                </div>
+
+                <div class="carousel-item">
+                    <img src="assets/img/imagen3.png" class="d-block w-100" alt="arte 3">
+                </div>
+            </div>
+
+            <button class="carousel-control-prev" type="button" data-bs-target="#demo" data-bs-slide="prev">
+                <span class="carousel-control-prev-icon"></span>
+            </button>
+
+            <button class="carousel-control-next" type="button" data-bs-target="#demo" data-bs-slide="next">
+                <span class="carousel-control-next-icon"></span>
+            </button>
+
+        </div>
+
+        <!-- TITULO -->
+        <h1 class="text-center mt-4">Galería de Arte</h1>
+        <p class="text-center text-muted">
+            Un espacio para explorar creatividad e imaginación
+        </p>
+
+        <!-- CATEGORÍAS -->
+        <div class="container my-4">
+            <h2 class="text-center mb-3">Categorías</h2>
+
+            <div class="row g-3 text-center">
+
+                <div class="col-md-3">
+                    <div class="p-3 bg-warning rounded">Pintura</div>
+                </div>
+
+                <div class="col-md-3">
+                    <div class="p-3 bg-info text-white rounded">Fotografía</div>
+                </div>
+
+                <div class="col-md-3">
+                    <div class="p-3 bg-danger text-white rounded">Dibujo</div>
+                </div>
+
+                <div class="col-md-3">
+                    <div class="p-3 bg-success text-white rounded">Arte digital</div>
+                </div>
+
+            </div>
+        </div>
+
+        <!-- GALERÍA -->
+        <div class="container my-5">
+            <h2 class="text-center mb-3">Obras destacadas</h2>
+
+            <div class="row g-4">
+
+                <div class="col-md-4">
+                    <div class="card">
+                        <img src="assets/img/imagen1.png" class="card-img-top" alt="obra 1">
+                        <div class="card-body">
+                            <h5 class="card-title">Obra 1</h5>
+                            <p class="card-text">Expresión de color y creatividad.</p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-md-4">
+                    <div class="card">
+                        <img src="assets/img/imagen2.png" class="card-img-top" alt="obra 2">
+                        <div class="card-body">
+                            <h5 class="card-title">Obra 2</h5>
+                            <p class="card-text">Exploración visual de emociones.</p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-md-4">
+                    <div class="card">
+                        <img src="assets/img/imagen3.png" class="card-img-top" alt="obra 3">
+                        <div class="card-body">
+                            <h5 class="card-title">Obra 3</h5>
+                            <p class="card-text">Creatividad en forma abstracta.</p>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+
+    </main>
+
+    <!-- FOOTER -->
+    <footer class="text-center p-4 bg-dark text-white">
+        <p class="mb-1">© 2026 Galería de Arte</p>
+        <i class="bi bi-instagram mx-2"></i>
+        <i class="bi bi-facebook mx-2"></i>
+    </footer>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+
+</html>
