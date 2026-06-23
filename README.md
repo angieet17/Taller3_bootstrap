@@ -52,7 +52,8 @@ git clone https://github.com/angieet17/Taller3_bootstrap.git
 
 ## 📸 Capturas
 
-Puedes agregar imágenes del proyecto aquí.
+<img width="1322" height="589" alt="image" src="https://github.com/user-attachments/assets/4e582693-437a-47d4-b74e-d29c4ae3e107" />
+
 
 ## 👩‍💻 Autor
 
