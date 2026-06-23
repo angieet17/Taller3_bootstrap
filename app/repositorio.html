@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="es-Co">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Taller 3</title>
+    <link rel="icon" type="image/x-icon" href="/assets/img/imagen1.png">
+    <!-- seo tags -->
+    <meta name="author" content="Angie Rodriguez">
+    <meta name="description" content="taller 1 de maquetacion web">
+    <meta name="keywords" content="TALLER,taller,Taller">
+    <!--OPTIMIZATION TAGS  meta [name="" content=""]*5-->
+    <meta name="theme-color" content="#000000">
+    <meta name="MobileOptimized" content="width">
+    <meta name="HandheldFriendly" content="true">
+    <meta name="mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black-traslucent">
+
+    <!--BOOSTRAP CSS cdn-->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB" crossorigin="anonymous">
+    <!-- Bootstrap Icons cdn -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.13.1/font/bootstrap-icons.min.css">
+    <!--BOOSTRAP CSS LOCAL 
+    <link rel="stylesheet" href="taller3/assets/css/bootstrap.css">
+    -->
+    <style>
+        body {
+            background-color: #f8f9fa;
+        }
+
+        .navbar {
+            background: linear-gradient(90deg, #ff6ec4, #7873f5);
+        }
+
+        .footer {
+            background: linear-gradient(90deg, #ff6ec4, #7873f5);
+        }
+
+        .thead-art {
+            background-color: #ff69b4;
+            color: white;
+        }
+    </style>
+</head>
+
+<body>
+    <!-- NAV -->
+    <header class="sticky-top">
+        <nav class="navbar navbar-expand-sm navbar-dark sticky-top ">
+            <div class="container-fluid">
+                <a class="navbar-brand" href="/index.html">Arte</a>
+
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#menu">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+
+                <div class="collapse navbar-collapse" id="menu">
+                    <ul class="navbar-nav mx-5">
+
+                        <li class="nav-item"><a class="nav-link" href="/app/tables.html"><i class="bi bi-table">Tablas</i></a></li>
+                        <li class="nav-item"><a class="nav-link" href="/app/forms.html"><i class="bi bi-people">Acceder</i></a></li>
+                        <li class="nav-item"><a class="nav-link" href="/app/github.html"><i class="bi bi-git me-2"></i>GitHub</a></li>
+                        <li class="nav-item"><a class="nav-link" href="/app/repositorio.html"><i class="bi bi-github me-2"></i>Repositorio</a></li>
+                    </ul>
+                    <ul class="navbar-nav ms-auto">
+                        <li class="nav-item">
+                            <a class="nav-link" href="/index.html">
+                                <i class="bi bi-people me-2"></i>pagina principal
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+    </header>
+    <main>
+        <div class="text-center">
+            <h2 class="mb-4">Repositorio GitHub</h2>
+
+            <a href="https://github.com/tu_usuario/tu_repositorio" class="btn btn-light border border-danger text-danger btn-lg shadow" target="_blank">
+                <i class="bi bi-github me-2"></i>
+                Ver repositorio
+            </a>
+        </div>
+    </main>
+    <footer class="footer text-center p-2 text-white fixed-bottom">
+        <p class="mb-1">© 2026 Galería de Arte</p>
+        <i class="bi bi-instagram mx-2"></i>
+        <i class="bi bi-facebook mx-2"></i>
+    </footer>
+</body>
+
+</html>
