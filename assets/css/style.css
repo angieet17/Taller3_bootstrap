@@ -5,6 +5,9 @@
  .footer {
      background: linear-gradient(90deg, #ff6ec4, #7873f5);
  }
+ .contenedor{
+    background: linear-gradient(90deg, #ff6ec4, #7873f5);
+ }
 
  .thead-art {
      background-color: #ff69b4;

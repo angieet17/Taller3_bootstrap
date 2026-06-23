@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -26,7 +27,149 @@
     -->
     <link rel="stylesheet" href="/assets/css/style.css">
 </head>
+
 <body>
-    
+    <header class="sticky-top">
+        <nav class="navbar navbar-expand-sm navbar-dark sticky-top ">
+            <div class="container-fluid">
+                <a class="navbar-brand" href="/index.html">Arte</a>
+
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#menu">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+
+                <div class="collapse navbar-collapse" id="menu">
+                    <ul class="navbar-nav mx-5">
+
+                        <li class="nav-item"><a class="nav-link" href="/app/tables.html"><i
+                                    class="bi bi-table me-2"></i>Tablas</a></li>
+
+                        <li class="nav-item"><a class="nav-link" href="/app/github.html"><i
+                                    class="bi bi-git me-2"></i>GitHub</a></li>
+
+                    </ul>
+                    <ul class="navbar-nav ms-auto">
+                        <li class="nav-item">
+                            <a class="nav-link" href="/app/forms.html">
+                                <i class="bi bi-people me-2"></i>Salir
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+    </header>
+    <main class="container my-5">
+
+        <h1 class="text-center mb-5">Guía básica de Git paso a paso</h1>
+
+        <div class="card shadow-lg border-0 mb-4 bg-light">
+            <div class="card-body">
+                <h2 class="text-primary text-center">Paso 1: Verificar la instalación de Git</h2>
+                <p class="text-center">Comprueba que Git está instalado correctamente en tu equipo.</p>
+                <div class="bg-dark text-white p-3 rounded text-center">
+                    git --version
+                </div>
+            </div>
+        </div>
+
+        <div class="card shadow-lg border-0 mb-4 bg-light">
+            <div class="card-body">
+                <h2 class="text-success text-center">Paso 2: Configurar tu identidad</h2>
+                <p class="text-center">Define tu nombre y correo para identificar tus cambios.</p>
+
+                <div class="bg-dark text-white p-3 rounded mb-2 text-center">
+                    git config --global user.name "Tu Nombre"
+                </div>
+
+                <div class="bg-dark text-white p-3 rounded text-center">
+                    git config --global user.email "tu.email@example.com"
+                </div>
+            </div>
+        </div>
+
+        <div class="card shadow-lg border-0 mb-4 bg-light">
+            <div class="card-body">
+                <h2 class="text-warning text-center">Paso 3: Inicializar proyecto local</h2>
+                <p class="text-center">Crea o entra a tu carpeta y actívala como repositorio.</p>
+
+                <div class="bg-dark text-white p-3 rounded mb-2 text-center">
+                    cd ruta/a/tu/proyecto
+                </div>
+
+                <div class="bg-dark text-white p-3 rounded text-center">
+                    git init
+                </div>
+            </div>
+        </div>
+
+        <div class="card shadow-lg border-0 mb-4 bg-light">
+            <div class="card-body">
+                <h2 class="text-danger text-center">Paso 4: Agregar archivos y commit</h2>
+                <p class="text-center">Guarda tu primera versión del proyecto.</p>
+
+                <div class="bg-dark text-white p-3 rounded mb-2 text-center">
+                    git add .
+                </div>
+
+                <div class="bg-dark text-white p-3 rounded text-center">
+                    git commit -m "Primer commit"
+                </div>
+            </div>
+        </div>
+
+        <div class="card shadow-lg border-0 mb-4 bg-light">
+            <div class="card-body">
+                <h2 class="text-info text-center">Paso 5: Crear repositorio en GitHub</h2>
+                <p class="text-center">Crea el repositorio remoto.</p>
+
+                <ul class="list-group list-group-flush">
+                    <li class="list-group-item">Inicia sesión en GitHub</li>
+                    <li class="list-group-item">Crea un nuevo repositorio</li>
+                    <li class="list-group-item">Asigna nombre y visibilidad</li>
+                    <li class="list-group-item">Haz clic en “Create repository”</li>
+                </ul>
+            </div>
+        </div>
+
+        <div class="card shadow-lg border-0 mb-4 bg-light">
+            <div class="card-body">
+                <h2 class="text-secondary text-center">Paso 6: Conectar con GitHub</h2>
+
+                <div class="bg-dark text-white p-3 rounded mb-2 text-center">
+                    git branch -M main
+                </div>
+
+                <div class="bg-dark text-white p-3 rounded mb-2 text-center">
+                    git remote add origin https://github.com/tu_usuario/tu_repositorio.git
+                </div>
+
+                <div class="bg-dark text-white p-3 rounded text-center">
+                    git push -u origin main
+                </div>
+            </div>
+        </div>
+
+        <div class="card shadow-lg border-0 mb-4 bg-light">
+            <div class="card-body">
+                <h2 class="text-center text-dark">Paso 7: Publicar proyecto</h2>
+                <p class="text-center">Sube todo a GitHub.</p>
+
+                <div class="bg-dark text-white p-3 rounded text-center">
+                    git push
+                </div>
+            </div>
+        </div>
+
+    </main>
+    <!-- FOOTER -->
+    <footer class="footer text-center p-4  text-white">
+        <p class="mb-1">© 2026 Galería de Arte</p>
+        <i class="bi bi-instagram mx-2"></i>
+        <i class="bi bi-facebook mx-2"></i>
+    </footer>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js"></script>
 </body>
+
 </html>
